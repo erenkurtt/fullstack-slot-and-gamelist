@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import Navbar from "../components/navigation/Navigation";
 import GameList from "../components/gameList/GameList";
-import PaginationSide from "../components/pagination/Pagination";
-import SearchBox from "../components/search/SearchBar";
+import PaginationSide from "../components/pagination/PaginationSide";
+import SearchBox from "../components/search/SearchBox";
+import Navigation from "../components/navigation/Navigation";
 
 const MainPage: React.FC = () => {
     return (
         <div>
-            <Navbar />
+            <Navigation />
             <SearchBox />
             <GameList />
             <PaginationSide />

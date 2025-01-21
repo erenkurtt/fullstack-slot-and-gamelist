@@ -1,9 +1,9 @@
 "use client";
 
+import React, {useEffect} from "react";
 import { Pagination } from "antd";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useDispatch, useSelector } from 'react-redux';
-import React, {useEffect} from "react";
 import styles from '@/src/styles/pagination/pagination.module.scss';
 import { RootState, AppDispatch } from '../../store/index';
 import  {setPage} from '../../store/gameSlice';

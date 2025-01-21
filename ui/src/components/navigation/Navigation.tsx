@@ -1,10 +1,10 @@
 "use client";
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 import styles from "@/src/styles/navigation/navigation.module.scss";
 
-const Navbar: React.FC = () => {
+const Navigation: React.FC = () => {
     const pathname = usePathname(); // Get current route
     // aims to navigate between spin and games pages
     return (
@@ -27,4 +27,4 @@ const Navbar: React.FC = () => {
     );
 };
 
-export default Navbar;
+export default Navigation;
