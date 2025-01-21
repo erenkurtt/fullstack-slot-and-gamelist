@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, {FC} from "react";
 import Navbar from "../components/navigation/Navigation";
 import Slot from "../components/slotspin/Slot";
