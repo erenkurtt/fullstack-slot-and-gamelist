@@ -1,10 +1,6 @@
 "use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, {FC, useEffect, useState} from "react";
 import { GameListItem } from "./interface";
-import axios from "axios";
 import { getGameList } from "@/src/api/apiCalls";
 import { Card, Row, Col } from 'antd';
 import styles from '@/src/styles/gamelist/gameList.module.scss';

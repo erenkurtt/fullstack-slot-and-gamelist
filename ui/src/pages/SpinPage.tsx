@@ -1,5 +1,4 @@
 "use client";
-
 import React, {FC} from "react";
 import Navbar from "../components/navigation/Navigation";
 import Slot from "../components/slotspin/Slot";

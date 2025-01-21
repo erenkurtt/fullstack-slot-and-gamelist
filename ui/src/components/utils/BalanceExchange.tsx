@@ -1,6 +1,6 @@
+"use client";
 import React, {useEffect, useState} from 'react';
-import styles from '../../styles/utils/loading.module.scss';
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 import { getExchange } from '@/src/api/apiCalls';
 import Loading from './Loading';
 
@@ -13,7 +13,7 @@ interface BalanceExchangeProps {
 const BalanceExchange: React.FC<BalanceExchangeProps> = ({ isOpen, balance, setModalOpen }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [exChangeData, setExchangeData] = useState<any>({});
-
+    //we are using exchange rate api to show the exchange of the coins. the component appears as a modal to the user
     useEffect(() => {
         const getCurrentExchange = async () => {
             const response = await getExchange();

@@ -1,7 +1,6 @@
 "use client";
 
 import { Pagination } from "antd";
-import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useDispatch, useSelector } from 'react-redux';
 import React, {FC, useEffect} from "react";

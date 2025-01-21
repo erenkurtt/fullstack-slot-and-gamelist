@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState, useRef } from "react";
 import { spinSlot, getBalance, resetBalance } from "@/src/api/apiCalls";
 import styles from '@/src/styles/spins/spins.module.scss';
