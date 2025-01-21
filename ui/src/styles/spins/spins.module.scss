@@ -1,0 +1,153 @@
+.spinContainer {
+    margin-top: 50px;
+    overflow: hidden;
+
+    .spinMain {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .spinItem {
+        overflow: hidden;
+        pointer-events: none;
+        border: 1px solid rgb(185, 185, 185);
+        border-radius: 10px; /* Apply rounded corners */
+        //padding: 10px;
+        height: 208px;
+        width: 208px;
+        padding: 8px;
+        img {
+            display: block;
+            width: 208px;
+            height: 208px; /* Make the image responsive to its container */
+            object-fit: cover;
+            border-radius: 10px; /* Apply rounded corners */
+        }
+
+        @media (max-width: 980px) {
+            height: 160px;
+            width: 160px;
+
+            img {
+                width: 160px;
+                height: 160px; /* Make the image responsive to its container */
+            }
+        }
+
+        @media (max-width: 780px) {
+            height: 140px;
+            width: 140px;
+
+            img {
+                width: 140px;
+                height: 140px; /* Make the image responsive to its container */
+            }
+        }
+
+
+        @media (max-width: 700px) {
+            height: 110px;
+            width: 110px;
+            padding: 5px;
+            img {
+                width: 110px;
+                height: 110px; /* Make the image responsive to its container */
+            }
+        }
+
+        @media (max-width: 560px) {
+            height: 85px;
+            width: 85px;
+            padding: 3px;
+            img {
+                width: 85px;
+                height: 85px; /* Make the image responsive to its container */
+            }
+        }
+
+        @media (max-width: 440px) {
+            height: 60px;
+            width: 60px;
+
+            img {
+                width: 60px;
+                height: 60px; /* Make the image responsive to its container */
+            }
+        }
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .spinButton {
+            background-color: #ffcc00;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          
+            &:hover {
+              background-color: #ff9900;
+              transform: scale(1.05);
+            }
+          
+            &:active {
+              background-color: #cc7700;
+              transform: scale(0.98);
+            }
+          
+            &:disabled {
+              background-color: #ccc;
+              cursor: not-allowed;
+            }
+        }
+
+        .exchangeButton {
+            background-color: #00ff37;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          
+            &:hover {
+              background-color: #00ff6a;
+              transform: scale(1.05);
+            }
+          
+            &:active {
+              background-color: #00ccb1;
+              transform: scale(0.98);
+            }
+          
+            &:disabled {
+              background-color: #ccc;
+              cursor: not-allowed;
+            }
+        }
+    }
+
+    .infoFieldMain {
+        margin-top: 50px;
+        .infoText {
+            text-align: center;
+        }
+        .currentBalance {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+$primary-color: #3498db;
+$hover-color: #2980b9;
+$text-color: #ffffff;
+$background-color: #2c3e50;
+$border-radius: 8px;
+
+.navbar {
+    margin-top: 40px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px 15px;
+                    border-radius: $border-radius;
+                    transition: all 0.3s ease;
+                    background-color: #c0c0c0;
+
+                    &:hover {
+                        background: $hover-color;
+                    }
+
+                    &.active {
+                        background: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
