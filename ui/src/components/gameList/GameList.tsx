@@ -1,5 +1,5 @@
 "use client";
-import React, {FC, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import { GameListItem } from "./interface";
 import { getGameList } from "@/src/api/apiCalls";
 import { Card, Row, Col } from 'antd';
@@ -11,7 +11,7 @@ import Loading from "../utils/Loading";
 
 const { Meta } = Card;
 
-const GameList: FC = () => {
+const GameList: React.FC = () => {
     const [gameItems, setGameItems] = useState<GameListItem[]>();
     const dispatch = useDispatch<AppDispatch>();
     const pageNumb = useSelector((state :RootState) => state.game.page);

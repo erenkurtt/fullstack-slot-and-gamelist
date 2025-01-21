@@ -1,9 +1,9 @@
 "use client";
-import React, {FC} from "react";
+import React from "react";
 import Navbar from "../components/navigation/Navigation";
 import Slot from "../components/slotspin/Slot";
 
-const SpinPage: FC = () => {
+const SpinPage: React.FC = () => {
     return (
         <div>
             <Navbar />
