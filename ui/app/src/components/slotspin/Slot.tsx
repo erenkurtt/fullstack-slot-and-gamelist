@@ -1,7 +1,6 @@
-"use client";
 import React, { useEffect, useState, useRef } from "react";
-import { spinSlot, getBalance, resetBalance } from "@/src/api/apiCalls";
-import styles from '@/src/styles/spins/spins.module.scss';
+import { spinSlot, getBalance, resetBalance } from "../../api/apiCalls";
+import styles from '../../styles/spins/spins.module.scss';
 import Loading from "../utils/Loading";
 import { slotResult } from "./interface";
 import BalanceExchange from "../utils/BalanceExchange";

@@ -1,7 +1,6 @@
-"use client";
 import React, {useEffect, useState} from 'react';
 import { Modal } from 'antd';
-import { getExchange } from '@/src/api/apiCalls';
+import { getExchange } from '../../api/apiCalls';
 import Loading from './Loading';
 
 interface BalanceExchangeProps {

@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "@/src/styles/navigation/navigation.module.scss";
+import styles from "../../styles/navigation/navigation.module.scss";
 
 const Navigation: React.FC = () => {
     const pathname = usePathname(); // Get current route

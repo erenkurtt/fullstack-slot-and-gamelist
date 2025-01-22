@@ -1,7 +1,6 @@
-"use client";
 import React, {useState, useEffect} from 'react';
 import styles from '../../styles/search/search.module.scss';
-import { setSearchText } from '@/src/store/gameSlice';
+import { setSearchText } from '../../store/gameSlice';
 import { AppDispatch } from '../../store/index';
 import { useDispatch } from 'react-redux';
 

@@ -1,12 +1,11 @@
-"use client";
 import React, { useEffect, useState} from "react";
 import { GameListItem } from "./interface";
-import { getGameList } from "@/src/api/apiCalls";
+import { getGameList } from "../../api/apiCalls";
 import { Card, Row, Col } from 'antd';
-import styles from '@/src/styles/gamelist/gameList.module.scss';
+import styles from '../../styles/gamelist/gameList.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/index';
-import { setTotalPage } from "@/src/store/gameSlice";
+import { setTotalPage } from "../../store/gameSlice";
 import Loading from "../utils/Loading";
 
 const { Meta } = Card;
