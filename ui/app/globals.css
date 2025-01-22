@@ -1,11 +1,9 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
@@ -14,11 +12,11 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: white;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: white;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px 10%;
 }
